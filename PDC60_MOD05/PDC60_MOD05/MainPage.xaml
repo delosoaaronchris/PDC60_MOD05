@@ -9,6 +9,8 @@
         </Frame>
         <Button Text="Accelarator" Clicked="AccelerometerPage_Clicked"/>
         
+        
+        
 
     </StackLayout>
 
