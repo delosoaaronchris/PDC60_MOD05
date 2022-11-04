@@ -15,8 +15,10 @@
                 Margin="10" FontSize="Large"  BackgroundColor="LightBlue"/>
         <Button Text="Magnetometer" Clicked="MagnetometerPage_Clicked" CornerRadius="15" 
                 Margin="10" FontSize="Large"  BackgroundColor="LightBlue"/>
+        <Button Text="My Compass" Clicked="MyCompass_Clicked" CornerRadius="15" 
+                Margin="10" FontSize="Large"  BackgroundColor="LightBlue"/>
 
-
+        
 
     </StackLayout>
 

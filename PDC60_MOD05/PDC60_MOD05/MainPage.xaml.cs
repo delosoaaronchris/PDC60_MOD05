@@ -34,5 +34,10 @@ namespace PDC60_MOD05
             await Navigation.PushAsync(new MagnetometerPage());
 
         }
+        private async void MyCompass_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MyCompass());
+
+        }
     }
 }
