@@ -7,10 +7,13 @@
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
             <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
-        <Button Text="Accelarator" Clicked="AccelerometerPage_Clicked"/>
-        <Button Text="Barometer" Clicked="BarometerPage_Clicked"/>
-        
-        
+        <Button Text="Accelarator" Clicked="AccelerometerPage_Clicked" CornerRadius="15" 
+                Margin="10" FontSize="Large" BackgroundColor="LightBlue" />
+        <Button Text="Barometer" Clicked="BarometerPage_Clicked" CornerRadius="15" 
+                Margin="10" FontSize="Large"  BackgroundColor="LightBlue"/>
+        <Button Text="Connectivity" Clicked="ConnectivityPage_Clicked" CornerRadius="15" 
+                Margin="10" FontSize="Large"  BackgroundColor="LightBlue"/>
+
 
     </StackLayout>
 

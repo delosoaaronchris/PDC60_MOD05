@@ -24,5 +24,10 @@ namespace PDC60_MOD05
             await Navigation.PushAsync(new BarometerPage());
 
         }
+        private async void ConnectivityPage_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ConnectivityPage());
+
+        }
     }
 }
