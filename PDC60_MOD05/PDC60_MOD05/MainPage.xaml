@@ -13,6 +13,9 @@
                 Margin="10" FontSize="Large"  BackgroundColor="LightBlue"/>
         <Button Text="Connectivity" Clicked="ConnectivityPage_Clicked" CornerRadius="15" 
                 Margin="10" FontSize="Large"  BackgroundColor="LightBlue"/>
+        <Button Text="Magnetometer" Clicked="MagnetometerPage_Clicked" CornerRadius="15" 
+                Margin="10" FontSize="Large"  BackgroundColor="LightBlue"/>
+
 
 
     </StackLayout>

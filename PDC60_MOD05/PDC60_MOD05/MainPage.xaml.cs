@@ -29,5 +29,10 @@ namespace PDC60_MOD05
             await Navigation.PushAsync(new ConnectivityPage());
 
         }
+        private async void MagnetometerPage_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MagnetometerPage());
+
+        }
     }
 }

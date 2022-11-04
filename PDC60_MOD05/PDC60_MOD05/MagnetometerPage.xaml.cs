@@ -10,15 +10,15 @@ using Xamarin.Forms.Xaml;
 namespace PDC60_MOD05
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class BarometerPage : ContentPage
+    public partial class MagnetometerPage : ContentPage
     {
-        public BarometerPage()
+        public MagnetometerPage()
         {
             InitializeComponent();
             try
             {
-            Barometer.ReadingChanged += ReadingChanged;
-            Barometer.Start(SensorSpeed.UI);
+                Magnetometer.ReadingChanged += ReadingChanged;
+                Magnetometer.Start(SensorSpeed.UI);
             }
             catch (FeatureNotEnabledException fnsEx)
             {
@@ -26,13 +26,14 @@ namespace PDC60_MOD05
             }
             catch (Exception ex)
             {
-                lblMeasure.Text =ex.Message;
+                lblMeasure.Text = ex.Message;
             }
+
         }
-        void ReadingChanged(object sender, BarometerChangedEventArgs e)
+        void ReadingChanged(object sender, MagnetometerChangedEventArgs e)
         {
             var data = e.Reading;
-            lblMeasure.Text = $"Pressure In Hectopascals: X:{data.PressureInHectopascals}";
+            lblMeasure.Text = $"Readings: \n X:{data.MagneticField.X}, \n Y: {data.MagneticField.Y}";
         }
     }
 }
