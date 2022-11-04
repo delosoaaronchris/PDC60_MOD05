@@ -17,6 +17,7 @@ namespace PDC60_MOD05
         private async void AccelerometerPage_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Page1()); 
+
         }
     }
 }
